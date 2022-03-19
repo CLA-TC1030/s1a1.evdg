@@ -32,6 +32,10 @@ Explicación de los otros archivos:
 - Comando para construir y ejecutar la aplicación: `make run` 
     * Si el ejecutable ya está construido, sólo teclea : `./build/exercise`
 
+- Comando para depurar: `make debug`
+    * Para conocer los comandos de depuración consulta:
+     https://u.osu.edu/cstutorials/2018/09/28/how-to-debug-c-program-using-gdb-in-6-simple-steps/
+
 ## Notas
 
 - El código será evaluado solamente si compila.
