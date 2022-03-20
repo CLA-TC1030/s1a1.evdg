@@ -15,6 +15,6 @@ run:
 	clear
 	./build/exercise
 debug: 
-	g++ exercise.cpp -g -o dexercise
+	g++ *.cpp -g -o dexercise
 	gdb dexercise
 	rm -f dexercise
