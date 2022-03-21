@@ -4,6 +4,16 @@
 
 Esta parte describe la actividad. Esta actividad ejemplo consiste en resolver la **Evaluación Diagnóstica** de tu UF TC1030 y someterla a revisión con **Autograding**.
 
+## Diagrama de Clases
+
+```mermaid
+classDiagram
+      MatrizFracciones --> "2..*" Fraccion
+      
+      Fraccion: num
+      Fraccion: den
+```
+
 ## Objetivo
 
 - Busca que el código pase correctamente todas las pruebas
