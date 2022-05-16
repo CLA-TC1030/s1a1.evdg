@@ -49,6 +49,12 @@ Explicación de los otros archivos:
 - Comando para depurar con `vsCode` en `GitPod`: `make debugvs` 
     * Utilizar el depurador de la IDE.     
 
+## Bibliotecas recomendadas
+
+- Algunos de los requisitos del proyecto se puede implementar consultando:
+  * http://www.sc.ehu.es/sbweb/fisica/cursoJava/fundamentos/estatico/fraccion/fraccion.htm
+  * https://www.geeksforgeeks.org/tokenizing-a-string-cpp/
+
 ## Notas
 
 - El código será evaluado solamente si compila.
