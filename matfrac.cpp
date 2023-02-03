@@ -26,36 +26,39 @@ fraccion matfrac::getA(int r, int c)
      return fraccion{};
 }
 
+//Consulta el número de renglones de la matriz
 int matfrac::getn()
 {
     return 0;
 }
+
+//Consulta el número de columnas de la matriz
 int matfrac::getm()
 {
     return 0;
 }
 
-//Suma dos matrices ------------------------------------------
+// Suma la matriz de fracciones m2 a la  matriz actual
 matfrac matfrac::suma(matfrac m2)
 {
      
      return matfrac{0,0};
 }
 
-//Compara dos matrices------------------------------
+//Compara la matriz de fracciones actual con la matriz de fracciones mf
 bool matfrac::igualA(matfrac mf)
 {
      return true;
 }
 
-//Compara las dimensiones de dos matrices ----------
+//Compara las dimensiones de la matriz actual con las dimensiones de la matriz mf
 bool matfrac::igualDimensionA(matfrac mf)
 {
     return true;
 }
 
-//Imprime la matriz actual igual a como se muestra en los archivos ----
+//Muestra en consola la matriz actual tal como se muestra en los archivos ----
 void matfrac::imprime()
 {
-    
+    std::cout << "Matriz de fracciones\n";
 }
