@@ -5,7 +5,7 @@
 Esta parte describe la actividad. Esta actividad ejemplo consiste en resolver la **Evaluación Diagnóstica** de tu UF TC1030 y someterla a revisión con **Autograding**.
 
 ## Diagrama de Clases
-
+Construye aquí el Diagrama de Clases de tu solución, usando el [Lenguaje Mermaid](https://mermaid.js.org/syntax/classDiagram.html).
 ```mermaid
 classDiagram
       MatrizFracciones --> "2..*" Fraccion
@@ -13,7 +13,7 @@ classDiagram
       Fraccion: num
       Fraccion: den
 ```
-
+Puedes apoyarte con el editor [Mermaid-live](https://mermaid.live/).
 ## Objetivo
 
 - Busca que el código pase correctamente todas las pruebas
