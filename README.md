@@ -2,7 +2,7 @@
 
 ## Descripción del Problema
 
-Esta actividad ejemplo consiste en resolver la **Evaluación Diagnóstica** de tu UF TC1030 y someterla a revisión con **Autograding**.
+Esta actividad consiste en resolver la **Evaluación Diagnóstica** de tu UF TC1030 y someterla a revisión con **Autograding**.
 
 ## Diagrama de Clases
 Construye aquí el Diagrama de Clases de tu solución, usando el [Lenguaje Mermaid](https://mermaid.js.org/syntax/classDiagram.html).
