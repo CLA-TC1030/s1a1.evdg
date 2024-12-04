@@ -4,8 +4,44 @@
 
 Esta actividad consiste en resolver la **Evaluación Diagnóstica** de tu UF TC1030 y someterla a revisión con **Autograding**.
 
+## Ejemplo de ejecución
+```
+Creando fracciones:
+5/7
+3/8
+Su suma es:
+61/56
+Su multiplicación es:
+15/56
+Leyendo archivos de matrices (m1.f, m2.f y m3.f)...
+Sumando m1+m2:
+3x4
+1/4 2/5 1/3 3/7 
+1/2 3/5 7/8 1/9 
+0/1 1/3 2/3 5/6 
++
+3x4
+1/2 3/5 6/7 1/5 
+3/4 0/1 3/8 2/7 
+2/9 1/3 1/3 1/3 
+=
+3x4
+3/4 1/1 25/21 22/35 
+5/4 3/5 5/4 25/63 
+2/9 2/3 1/1 7/6 
+Comparando m1 contra m2 (son iguales/diferentes)...
+m1 es diferente a m2 
+Matriz m3=
+3x4
+3/4 1/1 25/21 22/35 
+5/4 3/5 5/4 25/63 
+2/9 2/3 1/1 7/6 
+Comparando m1+m2 contra m3 para verificar que la suma es (correcta/incorrecta)...
+Suma correcta 
+```
+
 ## Diagrama de Clases
-Construye aquí el Diagrama de Clases de tu solución, usando el [Lenguaje Mermaid](https://mermaid.js.org/syntax/classDiagram.html).
+
 ```mermaid
 classDiagram
       MatrizFracciones --> "2..*" Fraccion
@@ -13,7 +49,18 @@ classDiagram
       Fraccion: num
       Fraccion: den
 ```
-Puedes apoyarte con el editor [Mermaid-live](https://mermaid.live/).
+[Diagramas de clase en el lenguaje Mermaid](https://mermaid.js.org/syntax/classDiagram.html)
+
+## Prompt para generar el Diagrama de Clases con IA - mermAID
+```
+@mermaid /uml
+```
+## Diagrama de clases UML con draw.io
+
+El repositorio está configurado para crear Diagramas de clases UML con ```draw.io```. Para usarlo simplemente das doble clic en el archivo  ```uml.class.drawio.png``` y se activará el editor ```draw.io``` incrustado en ```VSCode``` para edición. Asegúrate de agregar las formas UML en el menú de formas del lado izquierdo (opción ```+Más formas```). Al final insertas el archivo ```uml.class.drawio.png``` en apartado de UML de este archivo README.
+
+Para más información consulta el [MarketPlace](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio).
+
 ## Objetivo
 
 - Busca que el código pase correctamente todas las pruebas
@@ -25,8 +72,8 @@ Puedes apoyarte con el editor [Mermaid-live](https://mermaid.live/).
 
 ## Instrucciones
 
-- Deberás modificar SOLAMENTE los archivos `.cpp` y `.hpp` de la carpeta raíz según consideres conveniente !
-  
+- Deberás modificar el archivo `exercise.cpp`  y agregar la programación adicional que sea necesaria.
+
 Explicación de los otros archivos:
 
 - Archivo `test/tests.cpp` tiene las pruebas de esta actividad (NO LO CAMBIES!)
@@ -34,30 +81,57 @@ Explicación de los otros archivos:
 - Archivo `makefile` tienes los comandos para ejecutar la actividad (NO LO CAMBIES!)
 - Archivo  `./build/appTests` se generará después de compilar (para **pruebas locales**, solo ejecútalo)
 
-## Comandos para pruebas locales y ejecución
+## Comandos para pruebas locales, ejecución y depuración
 
 - Comando para construir y ejecutar pruebas: `make` o `make test`
     * Si el ejecutable ya está construido, sólo teclea : `./build/appTests`
 
 - Comando para construir y ejecutar la aplicación: `make run` 
     * Si el ejecutable ya está construido, sólo teclea : `./build/exercise`
-
+      
 - Comando para depurar: `make debug`
     * Para conocer los comandos de depuración consulta:
      https://u.osu.edu/cstutorials/2018/09/28/how-to-debug-c-program-using-gdb-in-6-simple-steps/
-     
-- Comando para depurar la ejecución del programa con `vsCode` o en `GitPod`: `make debugvs` 
+
+- Comando para depurar con `vsCode`: `make debugvs` 
+    * Abre el programa principal.
+    * Utiliza el depurador de la IDE.
+      
+- Comando para depurar pruebas con `vsCode`: `make debugtest` 
+    * Abre el programa principal.
     * Utilizar el depurador de la IDE.
+- Comando para limpieza de binarios `make clean`
+    * Úselo cuando desee eliminar cualquier binario que se haya generado en la carpeta `build`.
+    * Úselo cuando detecte que algún binario no está actualizado o bien no se hubiere construido conrrectamente.
 
-- Comando para depurar la ejecución de las pruebas con `vsCode` o en `GitPod`: `make debugtest` 
-    * Utilizar el depurador de la IDE.  
+## Instrucciones para construir y ejecutar la aplicación y pruebas usando CMake
 
-## Bibliotecas recomendadas
+1. Entrar al directorio de construcción:
+   ```sh
+   cd build
+   ```
 
-- Algunos de los requisitos del proyecto se puede implementar consultando:
-  * http://www.sc.ehu.es/sbweb/fisica/cursoJava/fundamentos/estatico/fraccion/fraccion.htm
-  * https://www.geeksforgeeks.org/tokenizing-a-string-cpp/
+2. Configurar el proyecto con CMake:
+   ```sh
+   cmake -DTEST_EXECUTABLE=ON ..
+   cmake -DMAIN_EXECUTABLE=ON ..
+   ```
 
+3. Construir la aplicación:
+   ```sh
+   cmake --build .
+   ```
+
+4. Ejecutar la aplicación:
+   ```sh
+   ./exercise
+   cd ..
+   ```
+5. Ejecutar las pruebas:
+   ```sh
+   ./appTests
+   cd ..
+   ```
 ## Notas
 
 - El código será evaluado solamente si compila.
