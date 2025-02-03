@@ -61,6 +61,14 @@ El repositorio está configurado para crear Diagramas de clases UML con ```draw.
 
 Para más información consulta el [MarketPlace](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio).
 
+## Prompt para revisar la aplicación de estándares de codificación y sugerir mejoras con IA
+
+Coloca como contexto el archivo `.github/CONTRIBUTING.md` y el (o los) `<archivo.cpp>`(s) a verificar la aplicación de estándares de programación. Usa el siguiente prompt:
+
+```
+Revisa la aplicación de estándares de codificación definidos en #file:CONTRIBUTING.md en el #file:<archivo.cpp> y sugiere posibles mejoras para cumplir con ellos
+```
+
 ## Objetivo
 
 - Busca que el código pase correctamente todas las pruebas
