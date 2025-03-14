@@ -63,11 +63,14 @@ Para más información consulta el [MarketPlace](https://marketplace.visualstudi
 
 ## Prompt para revisar la aplicación de estándares de codificación y sugerir mejoras con IA
 
-Coloca como contexto el archivo `.github/CONTRIBUTING.md` y el (o los) `<archivo.cpp>`(s) a verificar la aplicación de estándares de programación. Usa el siguiente prompt:
+1. Abre la ventana `Copilot Edit`/`Ediciones de Copilot`.
+2. Coloca como contexto el/los `<archivo.cpp/hpp>`(s) a verificar la aplicación de estándares de programación. 
+3. Usa el siguiente *prompt*:
 
 ```
-Revisa la aplicación de estándares de codificación definidos en #file:CONTRIBUTING.md en el #file:<archivo.cpp> y sugiere posibles mejoras para cumplir con ellos
+Revisa la aplicación de estándares de codificación y sugiere posibles mejoras para cumplir con ellos
 ```
+4. Verifica los cambios sugeridos y aprueba aquéllos que consideres convenientes.
 
 ## Objetivo
 
