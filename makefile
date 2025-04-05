@@ -6,7 +6,7 @@ appTests:
 test: appTests
 	clear && ./build/appTests && cd ..
 clean:
-	find build -mindepth 1 ! -name 'README.txt' ! -name 'm1.f' ! -name 'm2.f' ! -name 'm3.f' -delete && clear
+	find build -mindepth 1 ! -name 'README.txt' ! -name 'm1.f' ! -name 'm2.f' ! -name 'm3.f' -delete
 run:
 	cd build && cmake -DMAIN_EXECUTABLE=ON .. && cmake --build . && clear && ./exercise && cd ..
 debug: 
