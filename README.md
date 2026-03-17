@@ -2,7 +2,29 @@
 
 ## Descripción del Problema
 
-Esta actividad consiste en resolver la **Evaluación Diagnóstica** de tu UF TC1030 y someterla a revisión con **Autograding**.
+Esta actividad consiste en resolver la **Evaluación Diagnóstica** de tu UF TC1030 y someterla a revisión con **Autograding**. Se programa en C++ la suma de matrices de fracciones.
+
+## Ejemplo de suma de matrices de fracciones 3x3
+
+```math
+\begin{pmatrix}
+\frac{1}{2} & \frac{1}{3} & \frac{3}{4} \\
+\frac{2}{5} & \frac{3}{8} & \frac{1}{6} \\
+\frac{1}{4} & \frac{2}{3} & \frac{3}{5}
+\end{pmatrix}
++
+\begin{pmatrix}
+\frac{1}{4} & \frac{1}{4} & \frac{1}{8} \\
+\frac{1}{5} & \frac{1}{4} & \frac{1}{3} \\
+\frac{1}{4} & \frac{1}{6} & \frac{1}{5}
+\end{pmatrix}
+=
+\begin{pmatrix}
+\frac{3}{4} & \frac{7}{12} & \frac{7}{8} \\
+\frac{3}{5} & \frac{5}{8} & \frac{1}{2} \\
+\frac{1}{2} & \frac{5}{6} & \frac{4}{5}
+\end{pmatrix}
+```
 
 ## Ejemplo de ejecución
 ```
